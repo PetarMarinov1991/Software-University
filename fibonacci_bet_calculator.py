@@ -16,12 +16,15 @@ def average_percentage_for_success(seq):
     average = []
     for _ in range(100):
         iteration_percentage = []
-        percentage = 100
         for _ in range(100):
             result = [random.choice([1, 'X', 2]) for _ in range(seq)]
             if 'X' not in result:
                 percentage = 0
             iteration_percentage.append(percentage)
+            if 'X' in result:
+                iteration_percentage.append(100)
+            else:
+                iteration_percentage.append(0)
         average.append(sum([x / 100 for x in iteration_percentage]))
     average = sum([x / 100 for x in average])
     return f'Percentage for success: {average:.2f}%'
