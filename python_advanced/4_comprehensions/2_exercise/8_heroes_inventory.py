@@ -1,6 +1,4 @@
-names = input().split(', ')
-
-heroes = dict()
+heroes_dict = {h: [] for h in input().split(', ')}
 
 while True:
     line = input().split('-')
@@ -8,11 +6,17 @@ while True:
     if line[0] == 'End':
         break
 
-    name, item, value = line[0], line[1], int(line[2])
-    if name not in heroes:
-        heroes[name] = [[], 0]
-    if item not in heroes[name][0]:
-        heroes[name][0].append(item)
-        heroes[name][1] += value
+    name, item, cost = line[0], line[1], line[2]
+    if item not in heroes_dict[name]:
+        heroes_dict[name].append(item)
+        heroes_dict[name].append(cost)
 
-print('\n'.join([f'{name} -> Items: {len(value[0])}, Cost: {value[1]}' for name, value in heroes.items()]))
+for name, value in heroes_dict.items():
+    items_count = 0
+    cost = 0
+    for i in value:
+        if i.isdigit():
+            cost += int(i)
+        else:
+            items_count += 1
+    print(f'{name} -> Items: {items_count}, Cost: {cost}')

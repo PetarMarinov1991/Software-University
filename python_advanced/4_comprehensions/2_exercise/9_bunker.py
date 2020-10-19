@@ -1,19 +1,20 @@
-categories = input().split(', ')
-categories_dict = dict()
+categories = {n: [] for n in input().split(', ')}
+
+items_count = 0
+total_quality = 0
 
 for _ in range(int(input())):
-    data = [i.split(';') for i in input().split(' - ')]
-    category, item = data[0][0], data[1][0]
-    quantity = int(data[2][0].split(':')[1])
-    quality = int(data[2][1].split(':')[1])
+    line = input().split(' - ')
+    category, kind, quality_and_quantity = line[0], line[1], line[2]
+    quantity, quality = quality_and_quantity.split(';')
+    quality = quality.split(':')
+    quantity = quantity.split(':')
+    if kind not in categories[category]:
+        categories[category].append(kind)
+        items_count += int(quantity[1])
+        total_quality += int(quality[1])
 
-    if category not in categories_dict:
-        categories_dict[category] = [[], 0, 0]
-    if item not in categories_dict[category]:
-        categories_dict[category][0].append(item)
-    categories_dict[category][1] += quantity
-    categories_dict[category][2] += quality
-
-print(f'Count of items: {sum([y[1] for x, y in categories_dict.items()])}')
-print(f'Average quality: {(sum(y[2] for x, y in categories_dict.items())) / len(categories_dict):.2f}')
-print('\n'.join([f'{x} -> {", ".join([x for x in y[0]])}' for x, y in categories_dict.items()]))
+print(f'Count of items: {items_count}')
+print(f'Average quality: {total_quality / len(categories.keys()):.2f}')
+for food, kind in categories.items():
+    print(f'{food} -> {", ".join(kind)}')
