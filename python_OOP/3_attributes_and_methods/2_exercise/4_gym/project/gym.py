@@ -35,11 +35,11 @@ class Gym:
         if subscription not in self.subscriptions:
             self.subscriptions.append(subscription)
 
+    @staticmethod
+    def get_info(collection, x_id):
+        return [x for x in collection if x.id == x_id][0]
+
     def subscription_info(self, subscription_id: int):
-        subscription_info = [s for s in self.subscriptions if s.id == subscription_id][0]
-        customer_info = [c for c in self.customers if c.id == subscription_id][0]
-        trainer_info = [t for t in self.trainers if t.id == subscription_id][0]
-        plan_info = [p for p in self.plans if p.id == subscription_id][0]
-        equipment_info = [e for e in self.equipment if e.id == subscription_id][0]
-        return repr(subscription_info) + '\n' + repr(customer_info) + '\n' + repr(trainer_info) + '\n' + repr(
-            equipment_info) + '\n' + repr(plan_info)
+        all_info = [self.subscriptions, self.customers, self.trainers, self.equipment, self.plans]
+        info = [repr(Gym.get_info(i, subscription_id)) for i in all_info]
+        return '\n'.join(info)
