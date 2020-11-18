@@ -5,7 +5,7 @@ def find_king(matrix):
                 return i, j
 
 
-def is_valid(row, col):
+def valid_pos(row, col):
     return row in range(8) and col in range(8)
 
 
@@ -16,7 +16,7 @@ def output(matrix):
 
     for i in range(8):
         pos_1, pos_2 = king_pos[0] + directions[i][0], king_pos[1] + directions[i][1]
-        while is_valid(pos_1, pos_2):
+        while valid_pos(pos_1, pos_2):
             if matrix[pos_1][pos_2] == 'Q':
                 result.append([pos_1, pos_2])
                 break

@@ -1,6 +1,5 @@
 def best_list_pureness(*args):
-    my_list = args[0]
-    k = args[1]
+    my_list, k = args[0], args[1]
     rotations = 0
     best_pureness = 0
     for i in range(k + 1):
