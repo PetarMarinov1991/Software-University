@@ -7,23 +7,20 @@ class Trainer:
         self.pokemon_details = []
 
     def add_pokemon(self, pokemon: Pokemon):
-        for p in self.pokemon_details:
-            if pokemon.name in p:
-                return 'This pokemon is already caught'
-        self.pokemon_details.append(pokemon.pokemon_details())
-        return f'Caught ' + pokemon.pokemon_details()
+        if pokemon.name in map(lambda x: x.name, self.pokemon_details):
+            return 'This pokemon is already caught'
+        self.pokemon_details.append(pokemon)
+        return f'Caught {pokemon.pokemon_details()}'
 
     def release_pokemon(self, pokemon_name: str):
-        for p in self.pokemon_details:
-            if pokemon_name in p:
-                self.pokemon_details.remove(p)
-                return f'You have released {pokemon_name}'
-            return 'Pokemon is not caught'
+        pokemon = [p for p in self.pokemon_details if p.name == pokemon_name]
+        if pokemon:
+            self.pokemon_details.remove(pokemon[0])
+            return f'You have released {pokemon_name}'
+        return 'Pokemon is not caught'
 
     def trainer_data(self):
-        trainer_info = [
-            f'Pokemon Trainer {self.name}',
-            f'Pokemon count {len(self.pokemon_details)}'
-        ]
-        pokemon_info = [f'- {p}' for p in self.pokemon_details]
-        return f'\n'.join(trainer_info + pokemon_info)
+        result = f'Pokemon Trainer {self.name}\nPokemon count {len(self.pokemon_details)}\n- '
+        for pokemon in self.pokemon_details:
+            result += pokemon.pokemon_details() + '\n'
+        return result
