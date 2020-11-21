@@ -3,8 +3,8 @@ indices = list(map(int, input().split()))
 
 new_deck = []
 
-for _, idx in enumerate(indices):
-    first_half, second_half = deck[:idx], deck[idx:]
+for i in indices:
+    first_half, second_half = deck[:i], deck[i:]
 
     while True:
         if first_half:
