@@ -1,4 +1,4 @@
-<h2><p align="center"><b>Software-University tasks<p></h2>
+<h1><p align="center"><b>Software-University tasks<p></h1>
   
 <a href="https://softuni.bg/trainings/courses" rel="Courses">  ![SoftUni logo][logo] <a/>
 
