@@ -6,6 +6,8 @@
 
 <br/>
 
+<h2> Certificates </h2>
+
 |**Course**|**Certificate**|
 |---|---|
 |<a href="https://softuni.bg/trainings/2833/python-fundamentals-may-2020"> Python Fundamentals  </a>| <a href="https://softuni.bg/certificates/details/85587/8c5b530f"> Link</a> |
