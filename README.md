@@ -1,10 +1,18 @@
 <h1><p align="center"><b>Software-University tasks<p></h1>
   
+<br/>
+  
 <a href="https://softuni.bg/trainings/courses" rel="Courses">  ![SoftUni logo][logo] <a/>
+ 
+<br/>
 
 [logo]: http://innovationstarterbox.bg/wp-content/uploads/2016/05/Softuni_logo_trasparent.png
 
+<br/>
+
 <h1><b>Certificates</h1>
+
+<br/>
 
 |**Course**|**Certificate**|
 |---|---|
