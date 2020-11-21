@@ -8,11 +8,7 @@
 
 [logo]: http://innovationstarterbox.bg/wp-content/uploads/2016/05/Softuni_logo_trasparent.png
 
-<br/>
-
 <h1><b>Certificates</h1>
-
-<br/>
 
 |**Course**|**Certificate**|
 |---|---|
