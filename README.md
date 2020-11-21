@@ -6,7 +6,7 @@
 
 <br/>
 
-<h2> Certificates </h2>
+<h1><b>Certificates</h1>
 
 |**Course**|**Certificate**|
 |---|---|
