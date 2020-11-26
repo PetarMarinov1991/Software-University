@@ -65,13 +65,12 @@ class System:
     def system_split():
         result = ''
         for h in System._hardware:
-            name = h.name
             length_express = len([s for s in h.software_components if s.__class__.__name__ == "ExpressSoftware"])
             length_light = len([s for s in h.software_components if s.__class__.__name__ == "LightSoftware"])
             memory_usage = sum([s.memory_consumption for s in h.software_components])
             capacity_usage = sum([s.capacity_consumption for s in h.software_components])
             software_components = ', '.join(s.name for s in h.software_components)
-            result += f'Hardware Component - {name}\n' \
+            result += f'Hardware Component - {h.name}\n' \
                       f'Express Software Components: {length_express}\n' \
                       f'Light Software Components: {length_light}\n' \
                       f'Memory Usage: {memory_usage} / {h.memory}\n' \
