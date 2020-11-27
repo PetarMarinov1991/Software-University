@@ -19,7 +19,7 @@ class Account:
         if account.balance + amount_to_add < 0:
             raise ValueError('sorry cannot go in debt!')
         account.add_transaction(amount_to_add)
-        return f'New balance: {account.ballance}'
+        return f'New balance: {account.balance}'
 
     def __len__(self):
         return len(self._transactions)
