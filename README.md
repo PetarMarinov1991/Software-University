@@ -17,4 +17,5 @@
 |<a href="https://softuni.bg/trainings/3013/python-advanced-september-2020"> Python Advanced  </a>| <a href="https://softuni.bg/certificates/details/90048/78eb2cc1"> Link</a> |
 |<a href="https://softuni.bg/trainings/3014/python-oop-october-2020"> Python OOP  </a>| <a href="https://softuni.bg/certificates/details/94900/55068350"> Link</a> |
 |<a href="https://softuni.bg/trainings/3217/js-advanced-january-2021"> JS Advanced  </a>| in progress |
+|<a href="https://softuni.bg/trainings/3218/js-applications-february-2021"> JS Applications  </a>| in progress |
 |<a href="https://softuni.bg/trainings/2139/introduction-to-blockchain-technology-october-2018"> Introduction to Blockchain Technology  </a>| <a href="https://softuni.bg/certificates/details/58574/3e81543c"> Link</a> |
