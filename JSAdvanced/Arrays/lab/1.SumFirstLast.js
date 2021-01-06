@@ -4,4 +4,4 @@ function sumFirstAndLast(args) {
     return first + last
 }
 
-console.log(sumFirstAndLast(['20', '30', '40']))
+// console.log(sumFirstAndLast(['20', '30', '40']))
