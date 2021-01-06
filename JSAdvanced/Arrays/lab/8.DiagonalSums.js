@@ -1,13 +1,13 @@
 function diagonalSums(matrix) {
-    firstDiagonalSum = 0
-    secondDiagonalSum = 0
+    firstDiagonal = 0
+    secondDiagonal = 0
 
     for (i=0; i < matrix.length; i++) {
-        firstDiagonalSum += matrix[i][i]
-        secondDiagonalSum += matrix[i][matrix.length - i - 1]
+        firstDiagonal += matrix[i][i]
+        secondDiagonal += matrix[i][matrix.length - i - 1]
     }
 
-    return `${firstDiagonalSum} ${secondDiagonalSum}`
+    return `${firstDiagonal} ${secondDiagonal}`
 }
 
 // console.log(diagonalSums(
