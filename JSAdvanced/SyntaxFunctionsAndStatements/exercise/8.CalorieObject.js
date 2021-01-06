@@ -6,4 +6,4 @@ function solve(args){
     return '{' + products.join(', ') + '}'
 }
 
-console.log(solve(['Yoghurt', '48', 'Rise', '138', 'Apple', '52']))
+// console.log(solve(['Yoghurt', '48', 'Rise', '138', 'Apple', '52']))
