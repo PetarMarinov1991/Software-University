@@ -1,7 +1,7 @@
-function biggestElement(args) {
+function biggestElement(matrix) {
     numbers = []
-    for (const i in args) {
-        numbers.push(Math.max.apply(null, args[i]))
+    for (const i in matrix) {
+        numbers.push(Math.max.apply(null, matrix[i]))
     }
     return Math.max.apply(null, numbers)
 }
