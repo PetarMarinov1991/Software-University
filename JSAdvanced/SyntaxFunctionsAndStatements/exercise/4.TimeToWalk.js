@@ -1,9 +1,9 @@
 function calculateTimeToWalk(steps, footprint, speed) {
     let distance = steps * footprint;
-    let restCount = Math.floor(distance / 500);
+    let rest = Math.floor(distance / 500);
     let ms = speed * 0.277777778;
 
-    let seconds = (distance / ms) + restCount * 60;
+    let seconds = (distance / ms) + rest * 60;
     let h = Math.floor(seconds % (3600 * 24) / 3600);
     let m = Math.floor(seconds % 3600 / 60);
     let s = Math.round(seconds % 60);
@@ -19,8 +19,7 @@ function calculateTimeToWalk(steps, footprint, speed) {
         return num
     }
 
-    let result = `${pad(h)}:${pad(m)}:${pad(s)}`
-    return result
+    return `${pad(h)}:${pad(m)}:${pad(s)}`
 }
 
 // console.log(calculateTimeToWalk(4000, 0.6, 5));
