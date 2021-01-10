@@ -1,4 +1,4 @@
-function roadRadar([speed, location]) {
+function roadRadar(speed, location) {
     let restrictionsDict = {
         'motorway': 130,
         'interstate': 90,
@@ -7,14 +7,16 @@ function roadRadar([speed, location]) {
     }
     if (speed > restrictionsDict[location]) {
         let diff = speed - restrictionsDict[location];
+        let result = `The speed is ${diff} km/h faster than the allowed speed of ${restrictionsDict[location]}`
         if (diff > 40) {
-            return 'reckless driving'
+            return `${result} - reckless driving`
         } else if (diff > 20) {
-            return 'excessive speeding'
+            return `${result} - excessive speeding`
         } else {
-            return 'speeding'
+            return `${result} - speeding`
         }
     }
+    return `Driving ${speed} km/h in a ${restrictionsDict[location]} zone`
 }
 
 // console.log(roadRadar(40, 'city'))
