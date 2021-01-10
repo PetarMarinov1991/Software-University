@@ -1,7 +1,7 @@
-function numberSequence(len, k) {
+function numberSequence(seqLength, k) {
     let seq = [1]
 
-    for (i = 1; i < len; i++) {
+    for (i = 1; i < seqLength; i++) {
         if (seq.length < k) {
             seq.push(seq.reduce((a, b) => a + b, 0))
         } else {
