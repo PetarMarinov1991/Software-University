@@ -1,7 +1,7 @@
 function solve(arr) {
     let currentBiggest = Number.MIN_SAFE_INTEGER
     for (const i in arr) {
-        if (arr[i] > currentBiggest) {
+        if (arr[i] >= currentBiggest) {
             console.log(arr[i])
             currentBiggest = arr[i]
         }
