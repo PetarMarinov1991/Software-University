@@ -1,9 +1,4 @@
-function solve(points) {
-    let x1 = points[0];
-    let y1 = points[1];
-    let x2 = points[2];
-    let y2 = points[3];
-
+function solve(x1, y1, x2, y2) {
     function distance(x1, y1, x2, y2) {
         let distanceX = x1 - x2;
         let distanceY = y1 - y2;
