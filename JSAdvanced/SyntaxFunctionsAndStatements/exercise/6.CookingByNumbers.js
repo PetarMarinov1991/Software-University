@@ -1,4 +1,4 @@
-function solve([start, ...rest]) {
+function solve(start, ...rest) {
     let num = parseInt(start);
     let result = [];
 
