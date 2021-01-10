@@ -9,7 +9,7 @@ function numberSequence(len, k) {
         }
     }
 
-    return seq.join(' ')
+    return seq
 }
 
 // console.log(numberSequence(6 , 3))
