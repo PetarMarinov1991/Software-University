@@ -1,7 +1,7 @@
 function orbit([width, height, x, y]) {
     let matrix = new Array(width).fill().map(() => new Array(height).fill(0))
 
-    for (row = 0; row < width; row++) {
+    for (row=0; row < width; row++) {
         for (col=0; col < height; col++) {
             matrix[row][col] = Math.max(Math.abs(row - x), Math.abs(col - y)) + 1
         }
