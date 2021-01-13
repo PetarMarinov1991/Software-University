@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE table>
+<table lang="en">
 <head>
     <meta charset="UTF-8">
     <title>FromJSONToHTMLTable</title>
@@ -20,28 +20,26 @@
     <div id="wrapper">
     </div>
     <script>
+        // my code
         function fromJSONToHTMLTable(input) {
-            let jsonData = input.shift()
-            let data = JSON.parse(jsonData)
-            let first = data[0]
-            let html = ''
+            let data = JSON.parse(input)
 
-            html += '<table>'
-            html += `<tr>${Object.keys(first).map(x => `<th>${x}</th>`).join('')}</tr>`
+            let table = '<table>'
+            table += `<tr>${Object.keys(data[0]).map(x => `<th>${x}</th>`).join('')}</tr>`
             data.forEach(element => {
-                html += '<tr>'
-                html += Object.values(element).map(x => `<td>${x}</td>`).join('')
-                html += '</tr>'
+                table += '<tr>'
+                table += Object.values(element).map(x => `<td>${x}</td>`).join('')
+                table += '</tr>'
             });
-            html += '</table>'
+            table += '</table>'
 
-            return html
+            return table
         }
-        
+        // my code
         window.onload = function(){
             let container = document.getElementById('wrapper');
             container.innerHTML = fromJSONToHTMLTable(['[{"Name":"Tomatoes & Chips","Price":2.35},{"Name":"J&B Chocolate","Price":0.96}]']);
         };
     </script>
 </body>
-</html>
+</table>
