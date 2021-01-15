@@ -12,6 +12,8 @@ function JSONTable(input) {
         Object.values(employee).forEach(value => {
             result += `\t\t<td>${value}</td>\n`
         })
+
+        result += '\t</tr>\n'
     })
     return result + '</table>'
 }
