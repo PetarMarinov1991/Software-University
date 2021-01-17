@@ -24,6 +24,6 @@ function systemComponents(input) {
                 for (const subCompoment of component[1]) {
                     console.log(`||||||${subCompoment}`)
                 }
-            })
+        })
     })
 }
