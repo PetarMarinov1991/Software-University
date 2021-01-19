@@ -1,13 +1,13 @@
 function population(arr) {
-    let obj = {}
+    let cities = {}
     
     arr.forEach(element => {
-        let [town, people] = element.split('<->').map(x => x.trim())
-        if (obj[town] == null) obj[town] = 0
-        obj[town] = obj[town] + Number(people)
+        let [town, people] = element.split(' <-> ')
+        if (cities[town] == null) cities[town] = 0
+        cities[town] += Number(people)
     })
     
-    console.log(obj)
+    Object.entries(cities).forEach(town => console.log(`${town[0]} : ${town[1]}`))
 }
 
 // population(
