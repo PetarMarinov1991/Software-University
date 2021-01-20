@@ -16,7 +16,7 @@ function lowestPrices(arr) {
         result[product] = [price, town]      
     })
 
-    for (const [product, value] of Object.entries(result)) {
-        console.log(`${product} -> ${value[0]} (${value[1]})`)
+    for (const [product, [price, town]] of Object.entries(result)) {
+        console.log(`${product} -> ${price} (${town})`)
     }
 }
