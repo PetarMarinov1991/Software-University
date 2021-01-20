@@ -5,8 +5,8 @@ function createSortedList() {
             this.list.push(num)
             this.list.sort((a, b) => a - b)
         },
-        remove: function(num) {
-            this.list.splice(num, 1)
+        remove: function(index) {
+            this.list.splice(index, 1)
         },
         get: function(index) {
             return this.list[index]
