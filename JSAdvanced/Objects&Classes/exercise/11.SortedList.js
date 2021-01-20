@@ -1,12 +1,12 @@
 function createSortedList() {
     let sortedList = {
         list: [],
-        add: function(element) {
-            this.list.push(element)
+        add: function(num) {
+            this.list.push(num)
             this.list.sort((a, b) => a - b)
         },
-        remove: function(element) {
-            this.list.splice(element, 1)
+        remove: function(num) {
+            this.list.splice(num, 1)
         },
         get: function(index) {
             return this.list[index]
