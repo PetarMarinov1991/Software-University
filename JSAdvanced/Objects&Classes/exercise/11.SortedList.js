@@ -5,16 +5,22 @@ function createSortedList() {
             this.list.push(num)
             this.list.sort((a, b) => a - b)
         },
+        push: function(num) {
+            return add(num) // needed?
+        },
         remove: function(index) {
-            this.list.splice(index, 1)
+            if (index >= 0 && index < this.list.length) {
+                this.list.splice(index, 1)
+            } 
+            return 'IndexError'
         },
         get: function(index) {
-            return this.list[index]
+            if (index >= 0 && index < this.list.length) {
+                return this.list[index]
+            }
+            return 'IndexError'
         },
-        size: function() {
-            return this.list.length
-        }
+        size: this.list.length // ... error?
     }
-
     return sortedList
 }
