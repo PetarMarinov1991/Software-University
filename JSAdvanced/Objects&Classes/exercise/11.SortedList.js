@@ -9,18 +9,22 @@ function createSortedList() {
             return add(num) // needed?
         },
         remove: function(index) {
-            if (index >= 0 && index < this.list.length) {
+            if (validIndex(index)) {
                 this.list.splice(index, 1)
-            } 
+            }
             return 'IndexError'
         },
         get: function(index) {
-            if (index >= 0 && index < this.list.length) {
+            if (validIndex(index)) {
                 return this.list[index]
             }
             return 'IndexError'
         },
-        size: this.list.length // ... error?
+        size: 0,
+        // size: this.list.length ...error?
+        // size: sortedList['list'].length ...error?
     }
+    let validIndex = index => index >= 0 && index < sortedList['list'].length
+    sortedList['size'] = sortedList['list'].length // still 0 ? the list is not saved?
     return sortedList
 }
