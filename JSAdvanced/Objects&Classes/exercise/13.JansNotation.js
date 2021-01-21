@@ -6,8 +6,7 @@ function solve(input) {
         else doMath(arr, element)
     })
 
-    let output = arr.length >= 2 ? 'Error: too many operands!' : arr.toString()
-    return output
+    return arr.length >= 2 ? 'Error: too many operands!' : arr.toString()
 
     function doMath(numbers, operator) {
         let idx1 = numbers.length - 2
