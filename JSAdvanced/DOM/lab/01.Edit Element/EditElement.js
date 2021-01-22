@@ -1,4 +1,1 @@
-function editElement() {
-    const htmlRef = document.getElementById('e1').textContent;
-    console.log(htmlRef);
-}
+(ref, match, replacer) => ref.textContent = ref.textContent.replace(new RegExp(match, 'g'), replacer)
