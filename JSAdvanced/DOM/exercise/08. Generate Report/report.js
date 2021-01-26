@@ -5,9 +5,7 @@ function generateReport() {
     let checkedBoxesIndexes = []
 
     checkboxes.forEach((box, idx) => {
-        if (box.checked === true) {
-            checkedBoxesIndexes.push(idx)
-        }
+        if (box.checked) checkedBoxesIndexes.push(idx)
     })
 
     let result = []
@@ -17,15 +15,15 @@ function generateReport() {
 
     for (const row of tr) {
 
-        let obj = {}
+        let report = {}
     
         for (const idx of checkedBoxesIndexes) {
-            let currRowArr = row.children[idx].textContent
-            let currThName = th[idx].textContent.toLowerCase().trim()
-            obj[currThName] = currRowArr
+            let rowInfo = row.children[idx].textContent
+            let thName = th[idx].textContent.toLowerCase().trim()
+            report[thName] = rowInfo
         }
 
-        result.push(obj)
+        result.push(report)
     }
 
     output.value = JSON.stringify(result, null, 2)
