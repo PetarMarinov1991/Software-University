@@ -54,7 +54,9 @@ function solve() {
 
       best.workers.forEach(worker => result += `Name: ${worker.name} With Salary: ${worker.salary} `)
 
-      document.querySelector('#bestRestaurant>p').textContent = `Name: ${best.name} Average Salary: ${best.averageSalary.toFixed(2)} Best Salary: ${best.bestSalary.toFixed(2)}`
-      document.querySelector('#workers>p').textContent = result
+      document.querySelector('#bestRestaurant>p')
+         .textContent = `Name: ${best.name} Average Salary: ${best.averageSalary.toFixed(2)} Best Salary: ${best.bestSalary.toFixed(2)}`
+      document.querySelector('#workers>p')
+         .textContent = result
    }
 }
