@@ -1,37 +1,25 @@
-string = input().split('#')
+data = input().split('#')
 water = int(input())
 
 effort = 0
-total_fire = 0
-valid = False
+cells = []
 
-put_out_cells = []
+for fire_info in data:
+    args = fire_info.split(' = ')
+    fire_type, fire_lvl = args[0], int(args[1])
 
-for command in string:
-    arg = command.split(' = ')
-    fire_type = arg[0]
-    fire_lvl = int(arg[1])
+    valid_cell = True \
+        if fire_type == 'High' and fire_lvl in range(81, 126) \
+        or fire_type == 'Medium' and fire_lvl in range(51, 81) \
+        or fire_type == 'Low' and fire_lvl in range(1, 51) \
+        else False
 
-    if water < fire_lvl:
-        continue
+    if valid_cell:
+        if water >= fire_lvl:
+            water -= fire_lvl
+            effort += fire_lvl * 0.25
+            cells.append(fire_lvl)
 
-    if fire_type == 'High' and fire_lvl in range(81, 126):
-        valid = True
-    elif fire_type == 'Medium' and fire_lvl in range(51, 81):
-        valid = True
-    elif fire_type == 'Low' and fire_lvl in range(1, 51):
-        valid = True
-
-    if valid:
-        put_out_cells.append(fire_lvl)
-        water -= fire_lvl
-        effort += fire_lvl * 0.25
-        total_fire += fire_lvl
-
-print('Cells:')
-
-for cell in put_out_cells:
-    print(f' - {cell}')
-
+print(f'Cells:\n' + "\n".join(['- ' + str(cell) for cell in cells]))
 print(f'Effort: {effort:.2f}')
-print(f'Total Fire: {total_fire}')
+print(f'Total Fire: {sum(cells)}')
