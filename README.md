@@ -6,12 +6,12 @@
   
 <a href="https://softuni.bg/trainings/courses" rel="Courses"><img src="https://nakov.com/wp-content/uploads/2012/03/Software-University-logo-horizontal.png?sanitize=true" alt="Software University Logo"></a>
 
-<h2><p align="center"><b>courses</b><p></h2>
+<h1><p align="center"><b>Courses</b><p></h1>
 
 <table align="center">
   <tr>
-    <th>Course</th>
-    <th>Certificate</th>
+    <th><h2>Course</h2></th>
+    <th><h2>Certificate</h2></th>
   </tr>
   <tr>
     <td><a href="https://softuni.bg/trainings/2666/programming-basics-with-python-january-2020/open" > Programming Basics with Python </a></td>
