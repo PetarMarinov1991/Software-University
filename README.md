@@ -10,8 +10,8 @@
 
 <table align="center">
   <tr>
-    <th><h2>Course</h2></th>
-    <th><h2>Certificate</h2></th>
+    <th><b>Course</b></th>
+    <th><b>Certificate</b></th>
   </tr>
   <tr>
     <td><a href="https://softuni.bg/trainings/2666/programming-basics-with-python-january-2020/open" > Programming Basics with Python </a></td>
