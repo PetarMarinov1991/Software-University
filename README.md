@@ -1,6 +1,6 @@
 <h1><p align="center"><b>Software University Courses<p></h1>
   
-<a href="https://softuni.bg/trainings/courses" rel="Courses"><img src="//https://upload.wikimedia.org/wikipedia/commons/5/55/Software-University-Logo-blue-horizontal.png?sanitize=true" alt="Software University Logo"></a>
+<a href="https://softuni.bg/trainings/courses" rel="Courses"><img src="https://nakov.com/wp-content/uploads/2012/03/Software-University-logo-horizontal.png?sanitize=true" alt="Software University Logo"></a>
 
 <br/>
 <br/>
