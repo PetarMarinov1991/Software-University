@@ -8,7 +8,7 @@
 
 <h2><p align="center"><b>courses<p></h2>
 
-<table id="courses">
+<table border-radius>
   <tr>
     <th>Course</th>
     <th>Certificate</th>
