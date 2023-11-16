@@ -1,31 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-#courses {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#courses td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#courses tr:nth-child(even){background-color: #f2f2f2;}
-
-#courses tr:hover {background-color: #ddd;}
-
-#courses th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04AA6D;
-  color: white;
-}
-</style>
-</head>
 <body>
 
 <h1><p align="center"><b>Python Web Developer program</b><p></h1>
@@ -61,7 +35,7 @@
   </tr>
   <tr>
     <td><a href="https://softuni.bg/trainings/3218/js-applications-february-2021"> JS Applications  </a></td>
-    <td>in progressss</td>
+    <td>in progress</td>
   </tr>
 </table>
 
