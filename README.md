@@ -6,7 +6,7 @@
   
 <a href="https://softuni.bg/trainings/courses" rel="Courses"><img src="https://nakov.com/wp-content/uploads/2012/03/Software-University-logo-horizontal.png?sanitize=true" alt="Software University Logo"></a>
 
-<h2><p align="center"><b>courses<p></h2>
+<h2><p align="center"><b>courses</b><p></h2>
 
 <table align="center">
   <tr>
