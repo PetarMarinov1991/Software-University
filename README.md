@@ -61,7 +61,7 @@
   </tr>
   <tr>
     <td><a href="https://softuni.bg/trainings/3218/js-applications-february-2021"> JS Applications  </a></td>
-    <td>in progress</td>
+    <td>in progressss</td>
   </tr>
 </table>
 
