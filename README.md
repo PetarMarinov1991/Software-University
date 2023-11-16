@@ -2,7 +2,7 @@
   
 <a href="https://softuni.bg/trainings/courses" rel="Courses"><img src="https://nakov.com/wp-content/uploads/2012/03/Software-University-logo-horizontal.png?sanitize=true" alt="Software University Logo"></a>
 
-|**<b>Course**|**<b>Certificate**|
+<align="center">|**<b>Course**|**<b>Certificate**|
 |---|---|
 |<a href="https://softuni.bg/trainings/2666/programming-basics-with-python-january-2020/open" > Programming Basics with Python </a>   | <a href="https://softuni.bg/certificates/details/76801/11de81a2"> Link</a> |
 |<a href="https://softuni.bg/trainings/2833/python-fundamentals-may-2020"> Python Fundamentals  </a>| <a href="https://softuni.bg/certificates/details/85587/8c5b530f"> Link</a> |
